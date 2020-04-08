@@ -25,7 +25,7 @@ function startGame(canvasId, width, height) {
 
     ctx = canvas.getContext("2d");
 
-    gameLoopAPI.startLoop(10);
+    gameLoopAPI.startLoop(200);
 }
 
 function getCanvasContext() {

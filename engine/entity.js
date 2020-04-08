@@ -30,14 +30,18 @@ function addImage(name, x, y, zLevel, pictureURL, scaleX = 1, scaleY = 1) {
     entityList.sort(entitySort);
 }
 
-function addRectangle(name, x1, y1, x2, y2, zLevel, width, lineColor, fill = false, fillColor = "#000000") {
+function addRectangle(name, x, y, width, height, zLevel, lineWidth = 6, lineColor = "#000000", fill = false, fillColor = "#000000") {
     entityList.push({
         "name": name,
-        "x1": x1,
-        "y1": y2,
-        "x2": x2,
-        "y2": y2,
+        "x": x,
+        "y": y,
+        "width": width,
+        "height": height,
         "zLevel": zLevel,
+        "lineWidth": lineWidth,
+        "lineColor":  lineColor,
+        "fill": fill,
+        "fillColor": fillColor,
         "type": "rectangle",
         "needsRedraw": true
     });
